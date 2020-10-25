@@ -25,3 +25,7 @@ curl -X POST http://localhost:8080/request/hola\?query\=value -H "ll:delavaca"  
 {"host":"localhost:8080","name2":"value2","name1":"value1","user-agent":"curl/7.68.0","accept":"*/*"}% 
 
 ```
+# docker
+
+docker build . -t springboot:v1
+docker run -d -p 8080:8080 --net oidc  springboot:v1 --name springboot

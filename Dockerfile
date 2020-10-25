@@ -1,4 +1,4 @@
-FROM registry.redhat.io/ubi8/openjdk-8
+FROM registry.redhat.io/ubi8/openjdk-11
 LABEL "io.openshift.s2i.build.image"="registry.redhat.io/redhat-openjdk-18/openjdk18-openshift" \
       "io.openshift.s2i.scripts-url"="image:///usr/local/s2i" \
       "io.openshift.s2i.destination"="/tmp"
